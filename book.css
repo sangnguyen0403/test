@@ -1,0 +1,173 @@
+body{
+    background-color: #c8d2ca;
+}
+
+header {
+   background-color: #235b33;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tnav {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.tnav ul {
+    list-style-type: none;
+    display: flex;
+    word-spacing: 50px;
+    line-height: 60px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+
+.tnav>a:link, .tnav>a:visited, .tnav>a:active {
+    text-decoration: none;
+    color:#c8d2ca;
+}
+
+.tnav>a:hover {
+    color: black;
+}
+
+/* https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size:20px;
+    color:#044911;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #044911;
+    content: "\003E";
+}
+
+ul.breadcrumb li a {
+    color: #044911;
+    text-decoration: none;  
+}
+
+ul.breadcrumb li a:hover {
+    color: black;
+}
+
+.overview {
+    display: flex;
+}
+
+.front_pic, .pics_display, .price {
+    flex-basis: 30%;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.front_pic img{
+    width:100%;
+    height: auto;
+    padding: 10px;
+}
+
+.pics_display img{
+    display: flex;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+
+.pics_display {
+    flex-direction: column;
+}
+
+.price{
+    width:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.price>input {
+    background-color: #235b33;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.price>input:hover {
+    color:black;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color:#446c51;
+}
+footer {
+    float:right;
+    display: flex-end;
+}
+
+@media screen and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .tnav ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .bnav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .breadcrumb {
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .overview {
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .pics_display {
+        flex-direction: row;
+    }
+}

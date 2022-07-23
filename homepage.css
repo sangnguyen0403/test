@@ -1,0 +1,133 @@
+body{
+    background-color: #c8d2ca;
+}
+
+header {
+   background-color: #235b33;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tnav {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.tnav ul {
+    list-style-type: none;
+    display: flex;
+    word-spacing: 50px;
+    line-height: 60px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.tnav>a:link, .tnav>a:visited, .tnav>a:active {
+    text-decoration: none;
+    color:white;
+}
+
+.tnav>a:hover {
+    color: black;
+}
+
+.class {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin:25px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gil img{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+}
+
+.tkr img{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+}
+
+.gc img{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+}
+
+.saw img{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+}
+
+.tes img{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+}
+
+.mtroaw img{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+}
+
+.class>h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color:#446c51;
+}
+
+footer {
+    float:right;
+    display: flex-end;
+}
+
+@media screen and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .tnav ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .bnav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .category {
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .class {
+        display: flex;
+        flex-direction: column;
+    }
+}
